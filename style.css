@@ -1,5 +1,4 @@
 body {
-    /* Nueva fuente cómic redondeada */
     font-family: 'Fredoka', 'Comic Sans MS', cursive;
     background-color: #feeddd; 
     display: flex;
@@ -22,7 +21,7 @@ body {
 h1 {
     color: #df678f; 
     margin-top: 0;
-    font-weight: 600; /* Letra más gordita */
+    font-weight: 600; 
 }
 
 .pet-container img {
@@ -40,7 +39,7 @@ h1 {
     padding: 10px;
     border-radius: 15px;
     margin-bottom: 20px;
-    color: #4a4a4a; /* Gris oscuro para que se lea mejor */
+    color: #4a4a4a; 
 }
 
 .status p {
@@ -60,8 +59,6 @@ h1 {
     width: 100%;
     border: none;
     transition: background-color 0.3s, transform 0.1s;
-    
-    /* Le aplicamos la misma fuente a los botones */
     font-family: 'Fredoka', 'Comic Sans MS', cursive;
 }
 

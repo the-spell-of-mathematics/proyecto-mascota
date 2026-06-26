@@ -3,7 +3,7 @@
 // ==========================================
 
 const mascota = {
-    nombre: "Teddy",
+    nombre: "Kodiak",
     tipo: "oso",
     hambre: 50,      // 0 = lleno, 100 = muerto de hambre
     felicidad: 50,   // 0 = triste, 100 = feliz
