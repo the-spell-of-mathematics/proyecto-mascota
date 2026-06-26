@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Mascota Virtual</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bunny</h1>
+        
+        <div class="pet-container">
+            <img id="pet-image" src="conejo_normal.jpg" alt="Mi Conejo Pixel Art">
+        </div>
+
+        <div class="status">
+            <p>Hambre: <span id="hambre">50</span>/100</p>
+            <p>Felicidad: <span id="felicidad">50</span>/100</p>
+            <p>Energía: <span id="energia">100</span>/100</p>
+        </div>
+
+        <div class="actions">
+            <button onclick="alimentar()">Alimentar 🥕</button>
+            <button onclick="jugar()">Jugar 🎮</button>
+            <button onclick="dormir()">Dormir 💤</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
