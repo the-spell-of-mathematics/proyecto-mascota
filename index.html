@@ -3,30 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Mascota Virtual</title>
+    <title>Teddy, el oso</title>
+    
+    <!-- Aquí importamos la tipografía redondeada estilo cómic -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Bunny</h1>
+        <h1>Teddy, el oso</h1>
         
+        <!-- Contenedor de la imagen -->
         <div class="pet-container">
-            <img id="pet-image" src="conejo_normal.jpg" alt="Mi Conejo Pixel Art">
+            <img id="pet-image" src="oso_normal.gif" alt="Osito">
         </div>
 
+        <!-- Estadísticas de la mascota -->
         <div class="status">
             <p>Hambre: <span id="hambre">50</span>/100</p>
             <p>Felicidad: <span id="felicidad">50</span>/100</p>
             <p>Energía: <span id="energia">100</span>/100</p>
         </div>
 
+        <!-- Botones de acción -->
         <div class="actions">
-            <button onclick="alimentar()">Alimentar 🥕</button>
-            <button onclick="jugar()">Jugar 🎮</button>
-            <button onclick="dormir()">Dormir 💤</button>
+            <button class="btn-alimentar" onclick="alimentar()">Alimentar 🧁</button>
+            <button class="btn-jugar" onclick="jugar()">Jugar 🎈</button>
+            <button class="btn-dormir" onclick="dormir()">Dormir 💤</button>
         </div>
     </div>
     
-    <script src="script.js"></script>
+    <!-- ¡AQUÍ ESTÁ LA CORRECCIÓN! Ahora enlaza correctamente a mascota.js -->
+    <script src="mascota.js"></script>
 </body>
 </html>

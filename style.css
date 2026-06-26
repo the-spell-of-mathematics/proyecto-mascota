@@ -1,6 +1,7 @@
 body {
-    font-family: 'Courier New', Courier, monospace; /* Fuente estilo retro */
-    background-color: #f0f8ff;
+    /* Nueva fuente cómic redondeada */
+    font-family: 'Fredoka', 'Comic Sans MS', cursive;
+    background-color: #feeddd; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,49 +12,80 @@ body {
 .container {
     background-color: white;
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    border-radius: 25px; 
+    box-shadow: 0 10px 20px rgba(147, 145, 188, 0.3); 
     text-align: center;
-    border: 4px solid #333;
-    width: 300px;
+    border: 4px solid #9391bc; 
+    width: 320px;
+}
+
+h1 {
+    color: #df678f; 
+    margin-top: 0;
+    font-weight: 600; /* Letra más gordita */
 }
 
 .pet-container img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    /* Propiedad clave para que el pixel art no se vea borroso */
-    image-rendering: pixelated; 
+    width: 220px;
+    height: 220px;
+    object-fit: contain;
     margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    mix-blend-mode: multiply; /* Borra el fondo blanco */
 }
 
 .status {
-    background-color: #f9f9f9;
-    border: 2px dashed #ccc;
+    background-color: #fec1b6; 
+    border: 2px dashed #f3a6ba; 
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 20px;
+    color: #4a4a4a; /* Gris oscuro para que se lea mejor */
 }
 
 .status p {
     margin: 5px 0;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.1em;
 }
 
 .actions button {
-    background-color: #ff9800;
     color: white;
-    border: 2px solid #e65100;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 8px;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 12px;
     cursor: pointer;
-    font-size: 1em;
-    font-weight: bold;
+    font-size: 1.1em;
+    font-weight: 600;
     width: 100%;
+    border: none;
+    transition: background-color 0.3s, transform 0.1s;
+    
+    /* Le aplicamos la misma fuente a los botones */
+    font-family: 'Fredoka', 'Comic Sans MS', cursive;
 }
 
-.actions button:hover {
-    background-color: #e65100;
+.actions button:active {
+    transform: scale(0.95);
+}
+
+.btn-alimentar {
+    background-color: #f3a6ba; 
+}
+.btn-alimentar:hover {
+    background-color: #df678f; 
+}
+
+.btn-jugar {
+    background-color: #7abcc4; 
+}
+.btn-jugar:hover {
+    background-color: #9391bc; 
+}
+
+.btn-dormir {
+    background-color: #9391bc; 
+}
+.btn-dormir:hover {
+    background-color: #7abcc4; 
 }
